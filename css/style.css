@@ -1,0 +1,344 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	/* по умолчанию */
+	/* font-size: 16px;  */
+}
+body {
+	line-height: 1;
+	color: #4b4b4b;
+	font-family: "Roboto";
+	background-color: #fff;
+	color: #000000;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ------------------------------ */
+[class*="__container"] {
+	max-width: 1050px;
+	margin: 0px auto;
+	margin-top: 50px;
+}
+.registration {
+	height: 100%;
+	background: url("../img/form/bgimage.jpg")0 0/cover no-repeat;
+}
+.registration__container {
+	padding: 130px 15px 209px 15px;
+	display: flex;
+	column-gap: 111px;
+	justify-content: center;
+}
+.formn {
+display: flex;
+flex: 1 1 585px;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 585px;
+background: #5D62B5;
+border-radius: 40px;
+padding: 76px 57.5px 81px 57.5px;
+gap: 22px;
+filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+.form-title {
+font-weight: 900;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+color: #FFFFFF;
+margin-bottom: 21px;
+}
+.form__input {
+flex: 1 1 calc(25% + 22px);
+padding: 17px 23.5px 15px 23.5px;
+background: #5D62B5;
+border: 2px solid #FFFFFF;
+border-radius: 10px;
+opacity: 0.8;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+
+letter-spacing: 0.15px;
+color: #FFFFFF;
+}
+
+.form__input input::placeholder {
+	color: #fff;
+}
+.form__input input {
+outline: none;
+color: white;
+background: #5D62B5;
+}
+.form__textarea textarea {
+	color: white;
+}
+.form__textarea::placeholder {
+	opacity: 0.8;
+	color: #fff;
+}
+.form__textarea  {
+	flex: 1 1 470px;
+	min-height: 180px;
+	padding: 17px 49px 17px 23px;
+	outline: none;
+	border-radius: 10px;
+	color: white;
+	background: #5D62B5;
+	border: 2px solid #FFFFFF;
+}
+/* ---------------form__button */
+.form__button:hover,
+.form__button:focus {
+box-shadow: 9px 6px 8px 0px rgba(34, 60, 80, 0.46),9px 6px 8px 0px rgba(34, 60, 80, 0.21) inset;
+background-color: rgba(151, 235, 17, 0.626);
+}
+.form__button {
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 2;
+   letter-spacing: 0.15px;
+   text-transform: uppercase;
+   color: #fff;
+	cursor: pointer;
+   background: #f2726f;
+	border-radius: 8px;
+	padding: 12px 34px;
+	transition: 0.3s ease;
+}
+/* --------------------------------- */
+
+
+.sammary {
+}
+.sammary__container {
+	display: flex;
+	flex-direction: column;
+
+	max-width: 446px;
+	padding: 18px 30px;
+	background: #F5F7FF;
+	color: #000000;
+	line-height: 1.5;
+	font-weight: 400;
+}
+.sammary-title:not(:last-child) {
+	margin-bottom: 24.5px;
+}
+.sammary-title {
+font-weight: 600;
+font-size: 24px;
+
+
+}
+.sammary-title__text:not(:last-child) {
+	margin-bottom: 12.5px;
+}
+.sammary-title__text {
+font-size: 18px;
+}
+.sammary-title__sub-text:not(:last-child) {
+	margin-bottom: 12.5px;
+}
+.sammary-title__sub-text {
+font-size: 14px;
+color: #666666;
+}
+/* ----------------form */
+.sammary-form {
+	display: flex;
+	flex-direction: column;
+}
+.form-multiply {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-multiply__select-label:not(:last-child) {
+	margin-bottom: 14px;
+}
+.form-multiply__select  {
+padding: 0px 10px;
+height: 50px;
+border-radius: 4px;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.4;
+display: flex;
+align-items: center;
+color: #000000;
+margin-bottom: 19px;
+}
+
+
+.sammary-form__input:not(:last-child) {
+	margin-bottom: 19px;
+}
+.sammary-form__input {
+	display: flex;
+	flex-direction: column;
+
+}
+.sammary-form__input-label {
+	margin-bottom: 10px;
+}
+
+
+.sammary-form__input input {
+padding: 0px 10px;
+height: 50px;
+}
+/* -------------------------price */
+
+.sammary-form__price {
+}
+.price {
+}
+.price-item {
+}
+.price-item__title:not(:last-child) {
+	margin-bottom: 9px;
+}
+.price-item__title {
+font-weight: 600;
+font-size: 13px;
+line-height: 2;
+color: #000000;
+}
+.price-item__input  {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.price-item__label::before {
+	content: "";
+	display: inline-flex;
+	align-items: flex-end;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 2px solid #0156FF;
+	background-color: #f5f5f5;
+	margin-right: 8px;
+}
+.price-item__label::after {
+	content: "";
+	display: inline-flex;
+	align-items: flex-end;
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #0156FF;
+	opacity: 0;
+}
+.price-item__input:checked +.price-item__label::after {
+	opacity: 1;
+}
+.price-item__label {
+	position: relative;
+	
+}
+
+/* -------------------discount */
+.sammary-form__discount:not(:last-child) {
+	margin-bottom: 20px;
+}
+.sammary-form__discount {
+	display: flex;
+	flex-direction: column;
+}
+.discount {
+}
+.discount__title {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.5;
+color: #000000;
+}
+.discount__input input {
+	padding: 0px 10px;
+	min-height: 50px;
+}
+.discount__input {
+	display: flex;
+	flex-direction: column;
+	min-height: 50px;
+}
+
+.discount__input-label {
+font-weight: 600;
+font-size: 13px;
+line-height: 2;
+color: #000000;
+margin-bottom: 10px;
+}
+.sammary-form__button:focus,
+.sammary-form__button:hover {
+	color: #fff;
+	background-color: #0156FF;
+}
+.sammary-form__button {
+cursor: pointer;
+min-height: 50px;
+border: 2px solid #0156FF;
+border-radius: 50px;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+color: #0156FF;
+background: #F5F7FF;
+transition: 0.3s ease;
+}
+

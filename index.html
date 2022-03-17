@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hmw16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="registration">
+			<div class="registration__container">
+				<form class="formn" action="#">
+					<div class="form-title">
+						<h2>Make an appointment</h2>
+					</div>
+					<div class="form__input">
+						<input placeholder="Name" autocomplete="off" value="" type="text">
+					</div>
+					<div class="form__input">
+						<input placeholder="Email" autocomplete="off" value="" type="email">
+					</div>
+					<div class="form__input">
+						<input placeholder="Phone Number" autocomplete="off" value="" type="tel">
+					</div>
+					<div class="form__input">
+						<input placeholder="Select Service" autocomplete="off" value="" type="text">
+					</div>
+					<textarea class="form__textarea" placeholder="Tell us about your puppers include his/her name"></textarea>
+					<button class="form__button" type="submit">Make an Appointment</button>
+				</form>
+			</div>
+		</div>
+		<div class="sammary">
+			<div class="sammary__container">
+				<h2 class="sammary-title">Summary</h2>
+				<p class="sammary-title__text">Estimate Shipping and Tax</p>
+				<span class="sammary-title__sub-text">Enter your destination to get a shipping estimate.</span>
+				<form class="sammary-form" action="#">
+					<div class="form-multiply">
+						<label class="form-multiply__select-label" for="country">Country</label>
+						<select class="form-multiply__select" id="country" name="select">
+							<option value="1" selected>Украина</option>
+							<option value="2">Канада</option>
+							<option value="3">Нидерланды</option>
+							<option value="4">Румыния</option>
+						</select>
+					</div>
+					<div class="sammary-form__input">
+						<label class="sammary-form__input-label" for="state">State/Province</label>
+						<input autocomplete="off"  value="" id="state" type="text">
+					</div>
+					<div class="sammary-form__input">
+						<label class="sammary-form__input-label" for="zip">Zip/Postal Code</label>
+						<input autocomplete="off"  value="" id="zip" type="text">
+					</div>
+					<div class="sammary-form__price price">
+						<div class="price-item">
+							<h2 class="price-item__title">Standard Rate</h2>
+							<input id="delivery" name="state" class="price-item__input" type="radio">
+							<label for="delivery"  class="price-item__label">Price may vary depending on the item/destination. Shop Staff
+								will contact you.$21.00</label>
+						</div>
+						<div class="price-item">
+							<h2 class="price-item__title">Pickup from store</h2>
+							<input id="delivery2" name="state" class="price-item__input" type="radio">
+							<label for="delivery2"  class="price-item__label">1234 Street Adress City Address, 1234 $0.00</label>
+						</div>
+					</div>
+					<div class="sammary-form__discount discount">
+						<h2 class="discount__title">Apply Discount Code</h2>
+						<div class="discount__input">
+							<label class="discount__input-label"  for="discount">Enter discount code</label>
+							<input autocomplete="off" id="discount" placeholder="Enter Discount code"  value="" type="text">
+						</div>
+					</div>
+					<button class="sammary-form__button" type="submit">Apply Discount</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
